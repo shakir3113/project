@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="rail.css">
+    <title>IRCTC Booking</title>
+    <link rel="icon" href="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\IRCTC_Logo.svg.png">
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #0075c2;
+            padding: 10px 20px;
+            border-bottom: 4px solid rgb(0, 183, 255);
+            color: white;
+        }
+
+        .header img {
+            height: 60px;
+        }
+
+        .header nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        .header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .main {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            margin-right: 20px;
+        
+        }
+        
+
+        .section h2 {
+            color: #0075c2;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .section .content {
+            display: flex;
+            align-items: center;
+        }
+
+        .section .content img {
+            margin-right: 10px;
+        }
+
+        .section .content p {
+            margin: 0;
+        }
+
+        .forminput {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #ffffff;
+            border: 3px solid #b0c6da;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .forminput input[type=text], .forminput select {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .forminput label {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .forminput button {
+            background-color: #0075c2;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .forminput button:hover {
+            background-color: #005c96;
+        }
+        .services {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.service h1 {
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+
+.service-item {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.service-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+footer {
+    background-color: #2650d8;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\indian railways logo.jpg" alt="IRCTC Logo">
+            <nav>
+                <a href="https://www.irctc.co.in/nget/train-search">Login</a>
+                <a href="https://www.air.irctc.co.in/">Flight Tickets</a>
+                <a href="https://www.hotels.irctc.co.in/">Hotel Booking</a>
+                <a href="https://www.irctctourism.com/tourpacakage_search?searchKey=&tagType=&travelType=&category=">Tour Packages</a>
+                <a href="https://www.irctctourism.com/">IRCTC Tourism</a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="section">
+                <h2>PNR STATUS</h2>
+                <div class="content">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\pnr image.jpg" alt="PNR Status Icon" width="60">
+                    <a  href="https://www.indianrail.gov.in/enquiry/PNR/PnrEnquiry.html?locale=en"><p>Check your PNR status online with IRCTC.</p></a>
+                </div><br>
+                <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\tourismmm.jpg" width="350" height="290">
+                <a href="https://www.irctctourism.com/"><h4>click here to explore</h4></a>
+            </section>
+
+            <section class="section">
+                <h2>CHART / VACANCY</h2>
+                <div class="content">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\chart image.jpg" alt="Chart Vacancy Icon" width="60">
+                   <a href="https://www.irctc.co.in/online-charts/" ><p>Find out the chart and vacancy information for your train.</p></a>
+                </div><br><br>
+                <iframe width="350" height="300" src="https://www.youtube.com/embed/l7XWudlhw5g?si=hjp5DgOx46Y8wCIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>" 
+                 
+           
+            </section>
+
+            <section class="section">
+                <div class="forminput">
+                    <h2>BOOK TICKET</h2>
+                    <form>
+                        <label for="from">From:</label>
+                        <input type="text" id="from" name="from" placeholder="Enter station name">
+                        
+                        <label for="to">To:</label>
+                        <input type="text" id="to" name="to" placeholder="Enter station name">
+                        
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date">
+                        
+                        <label for="class">Class:</label>
+                        <select id="class" name="class">
+                            <option value="All Classes">All Classes</option>
+                            <option value="Anubhuti Class">Anubhuti Class(EA)</option>
+                            <option value="AC First Class">AC First Class (1A)</option>
+                            <option value="Vistadome AC(EV)">Vistadome AC(EV)</option>
+                            <option value="AC 2 Tier">AC 2 Tier (2A)</option>
+                            <option value="First Class (FC)">First Class (FC)</option>
+                            <option value="Sleeper Class">Sleeper Class (SL)</option>
+                        </select>
+                        
+                        <label for="quota">Quota:</label>
+                        <select id="quota" name="quota">
+                            <option value="General">GENERAL</option>
+                            <option value="Ladies">LADIES</option>
+                            <option value="lower berth/sr.citizen">LOWER BERTH/SR.CITIZEN</option>
+                            <option value="person with disability">PERSON WITH DISABILITY</option>
+                            <option value="duty pass">DUTY PASS</option>
+                            <option value="Tatkal">TATKAL</option>
+                        </select>
+                        
+                        <button type="submit">Search</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <section class="services">
+            <div class="container">
+                <h1>Have you not found the right one?
+                    Find a service suitable for you here.</h1>
+                <div class="services-grid">
+                    <div class="service-item">
+                        <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\train.jpg" alt="Trains">
+                        <h3>Book Train Tickets</h3>
+                        <p>Book your train tickets online with ease.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\hotel.jpg" alt="Hotels">
+                        <h3>Book Hotels</h3>
+                        <p>Find and book hotels near your destination.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\flight.jpg" alt="Flights">
+                        <h3>Book Flights</h3>
+                        <p>Plan your trip with flight booking options.</p>
+                    </div>
+                    <div class="service-item">
+                        <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\tourism.jpg" alt="Tourism">
+                        <h3>Discover Tourism</h3>
+                        <p>Explore tourist destinations with our packages.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+           <center> <h1>HOLIDAYS</h1></center>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\IMAGE1.jpg" alt="Tourism">
+                    <h3>INDIA GATE</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur nihil veniam deserunt nesciunt aliquam placeat? Perspiciatis vitae veniam, nesciunt totam excepturi sapiente aliquam, assumenda accusamus nihil dignissimos porro quibusdam odio!.</p>
+                </div>
+                <div class="service-item">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\IMAGE2.jpg" alt="Tourism">
+                    <h3>GATEWAY OF INDIA</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem laborum omnis sit quaerat debitis illo hic dolorum, officia nobis recusandae pariatur itaque mollitia voluptate repellat quam quos dolorem, fugit voluptates..</p>
+                </div>
+                <div class="service-item">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\IMAGE3.jpg" alt="Tourism">
+                    <h3>LADAKH</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi fugiat, ad sint cumque aspernatur laboriosam harum ipsa dolore? Illum ratione eius quia eaque maiores repudiandae fuga debitis ipsam esse porro!.</p>
+                </div>
+                <div class="service-item">
+                    <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\IMAGE4.jpg" alt="Tourism">
+                    <h3>TAJ MAHAL</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex cum deleniti magnam dolor, ratione nisi ut sunt nulla blanditiis obcaecati beatae in vitae similique, voluptatibus quidem, rerum suscipit fugiat. Officia..</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            Get Connected with us on social networks<h1></h1><img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\facebook.jpg" width="35" height="35">
+            <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\instagram.jpg" width="35" height="35">
+            <img src="C:\Users\Admin\Desktop\HTML\ORGINAL\IMAGES\youtube.jpg" width="35" height="35">
+
+        </div>
+        <div>
+            
+        </div>
+
+    </footer>
+</body>
+</html>
